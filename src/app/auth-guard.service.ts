@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import { Router, RouterStateSnapshot  } from '@angular/router';
 
 @Injectable()
-export class AuthGaurd implements CanActivate {
+export class AuthGuard implements CanActivate {
 
   constructor(private auth: AuthService, private router: Router ) { }
 
@@ -18,4 +18,4 @@ export class AuthGaurd implements CanActivate {
     });
   }
 }
- 
+  
