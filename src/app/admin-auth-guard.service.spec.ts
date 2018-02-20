@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { AdminAuthGaurd } from './admin-auth-guard.service';
+import { AdminAuthGuard } from './admin-auth-guard.service';
 
-describe('AdminAuthGaurdService', () => {
+describe('AdminAuthGuardService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [AdminAuthGaurd]
+      providers: [AdminAuthGuard]
     });
   });
 
-  it('should be created', inject([AdminAuthGaurd], (service: AdminAuthGaurd) => {
+  it('should be created', inject([AdminAuthGuard], (service: AdminAuthGuard) => {
     expect(service).toBeTruthy();
   }));
 });
