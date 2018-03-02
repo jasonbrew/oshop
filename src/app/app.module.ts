@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { FormsModule } from '@angular/forms'; 
 import { CustomFormsModule } from 'ng2-validation'; 
-import { DataTableModule } from 'angular-4-data-table';
+// import { DataTableModule } from 'angular-4-data-table';
+import { DataTable, DataTableResource } from 'angular-4-data-table-fix';
 
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
@@ -30,6 +31,7 @@ import { LoginComponent } from './login/login.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { ProductCardComponent } from './product-card/product-card.component';
+import { DataTableModule } from 'angular-4-data-table';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,7 @@ import { ProductCardComponent } from './product-card/product-card.component';
   imports: [
     BrowserModule,
     FormsModule,
-    CustomFormsModule,
+    CustomFormsModule, 
     DataTableModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
