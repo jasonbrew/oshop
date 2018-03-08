@@ -12,12 +12,12 @@
    <!-- Title Column -->
    <ng-container matColumnDef="title">
    <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
-   <mat-cell *matCellDef="let row"> {‌{row.title}} </mat-cell>
+   <mat-cell *matCellDef="let row"> {‌{ row.title }} </mat-cell>
    </ng-container>
    <!-- Progress Column -->
    <ng-container matColumnDef="price">
    <mat-header-cell *matHeaderCellDef mat-sort-header> Price </mat-header-cell>
-   <mat-cell *matCellDef="let row"> {‌{row.price | currency: 'GBP' : symbol }}</mat-cell>
+   <mat-cell *matCellDef="let row"> {‌{ row.price | currency: 'USD' : symbol }}</mat-cell>
    </ng-container>
    <ng-container matColumnDef="$key">
    <mat-header-cell *matHeaderCellDef mat-sort-header></mat-header-cell>
@@ -29,6 +29,6 @@
    <mat-row *matRowDef="let row; columns: displayedColumns;">
    </mat-row>
    </mat-table>
-   <mat-paginator #paginator
-   [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+   <!-- <mat-paginator #paginator
+   [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator> -->
   </div>

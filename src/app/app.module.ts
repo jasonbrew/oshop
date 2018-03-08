@@ -14,7 +14,8 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { FormsModule } from '@angular/forms'; 
 import { CustomFormsModule } from 'ng2-validation';
-import { MatPaginatorModule, MatSortModule, MatTabsModule } from '@angular/material';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule, MatTabsModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
