@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { FormsModule } from '@angular/forms'; 
 import { CustomFormsModule } from 'ng2-validation';
-import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
+import { MatPaginatorModule, MatSortModule, MatTabsModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
@@ -52,7 +52,10 @@ import { DataTableModule } from 'angular-4-data-table';
   imports: [
     BrowserModule,
     FormsModule,
-    CustomFormsModule, 
+    CustomFormsModule,
+    MatTabsModule,
+    MatPaginatorModule,  
+    MatSortModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
