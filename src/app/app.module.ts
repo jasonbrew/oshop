@@ -14,8 +14,8 @@ import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 import { FormsModule } from '@angular/forms'; 
 import { CustomFormsModule } from 'ng2-validation';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule, MatTabsModule } from '@angular/material';
+import { MatTableModule, MatPaginatorModule, MatFormFieldModule, MatInputModule, MatSortModule } from '@angular/material'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
@@ -31,7 +31,6 @@ import { LoginComponent } from './login/login.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { ProductFilterComponent } from './products/product-filter/product-filter.component';
 import { ProductCardComponent } from './product-card/product-card.component';
-import { DataTableModule } from 'angular-4-data-table';
 
 @NgModule({
   declarations: [
@@ -54,7 +53,12 @@ import { DataTableModule } from 'angular-4-data-table';
     BrowserModule,
     FormsModule,
     CustomFormsModule,
-    MatTabsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSortModule,
+    BrowserAnimationsModule,,
     MatPaginatorModule,  
     MatSortModule,
     AngularFireModule.initializeApp(environment.firebase),
